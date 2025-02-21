@@ -85,7 +85,7 @@ Repeat the above steps to create a second alert condition: Open a critical incid
 Select the **NRU Training** account. From New Relic’s main menu, select _Alerts_ > _Alert Conditions_, then click _+ New alert condition_ in the upper-right.
 
 ## Step 2
-Select _Write your own query_. **Challenge:** See if you can write a query to return the maximum percentage of CPU usage from each host running the _New Relic Pet Clinic_ APM service. (Try asking AI and see how it does.) When you have a working query, click _Next_.
+Select _Write your own query_. **Challenge:** See if you can write a query to return the maximum percentage of CPU usage from each host running the _New Relic Pet Clinic_ APM service. (_Hint:_ Use FACET. Try asking AI and see what it suggests.) When you have a working query, click _Next_.
 
 ## Step 3
 On the next screen, set a static threshold to open a critical incident when the query returns a value above 50 (percent) for at least 5 minutes. You may optionally add a second threshold to open a warning incident when the query returns a value above 25 for at least 2 minutes.
