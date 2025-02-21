@@ -88,7 +88,7 @@ Select the **NRU Training** account. From New Relic’s main menu, select _Alert
 Select _Write your own query_. **Challenge:** See if you can write a query to return the maximum percentage of CPU usage from each host running the _New Relic Pet Clinic_ APM service. (Try asking AI and see how it does.) When you have a working query, click _Next_.
 
 ## Step 3
-On the next screen, set a static threshold to open a critical incident when the query returns a value above 50 (percent) for at least 3 minutes. You may optionally add a second threshold to open a warning incident when the query returns a value above 25 for at least 2 minutes.
+On the next screen, set a static threshold to open a critical incident when the query returns a value above 50 (percent) for at least 5 minutes. You may optionally add a second threshold to open a warning incident when the query returns a value above 25 for at least 2 minutes.
 
 ## Step 4
 On the next screen, give your alert condition a clear name to describe what’s wrong when an incident occurs, for example: “[Your initials] Pet Clinic host CPU usage > 50 percent”. Add the new condition to the alert policy you created in the previous lab.
@@ -125,10 +125,7 @@ When the destination is configured correctly, click _Save_.
 ## Step 7
 Back on the **Configure your workflow** page, click _Activate workflow_.
 
-## Step 8
-Test your workflow: In a web browser, visit [https://foodme.nru.to/](https://foodme.nru.to/). Enter a customer name and address. Select a restaurant, add some menu items to your cart, and click _Checkout_. On the payment page, adjust the quantity of some items so that the order total is greater than $1000. Complete the (fake) payment information and click _Purchase_.
-
-Within 2 minutes, you should receive an email notification that your alert condition has triggered a critical incident.
+The instructor will generate high CPU load on one of the hosts. Within 5 minutes, you should receive an email notification that your alert condition has triggered a critical incident.
 
 ## Additional resources
 - [Workflows documentation](https://docs.newrelic.com/docs/alerts/get-notified/incident-workflows/)
