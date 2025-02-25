@@ -147,7 +147,7 @@ Under **Set SLI: Choose data**, select the _Pet Clinic AWS_ Synthetic monitor fr
 Under **Set SLI: Configure queries**, New Relic automatically suggest queries to get the total number of checks for the Synethics monitor, and the number of successful checks. Select _Success. Proportion of successful synthetic checks_, then click _Continue_.
 
 ## Step 4
-Under **Set SLO: Time window and target percentage**, select the desired time window and target percentage. For this lab, select a window of 1 hour and target of 90%, then click _Continue_.
+Under **Set SLO: Time window and target percentage**, select the desired time window and target percentage. For this lab, select a window of 1 day and target of 90%, then click _Continue_.
 
 ## Step 5
 Finally, give your service level a name, such as “[Your initials] Pet Clinic AWS - Success”. You may optionally add tags and a description. Click _Save_ in the lower right to save your service level.
