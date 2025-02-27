@@ -8,12 +8,20 @@ This presentation and the information herein (including any information that may
 
 **Objective:** The New Relic Pet Clinic application experienced a sudden increase in response time. Use integrated APM and Infrastructure to investigate the problem.
 
-## Step 1
+## Step 1: Log into the training account
+
+In a private browser window, use the following credentials to log into New Relic: 
+
+- URL: [https://one.newrelic.com/](https://one.newrelic.com/)
+- Email: learn@newrelicuniversity.com
+- The instructor will provide the password
+
+## Step 2
 Select the **New Relic Pet Clinic** application in the **NRU Training** account. Set the time picker to 24 hours, and locate a response-time spike (there should be one daily between 06:10 and 06:50 UTC). 
 
 ![](/images/new-relic-pet-clinic-apm-overview.png)
 
-## Step 2
+## Step 3
 Use integrated APM and Infrastructure to answer the following questions: 
 
 - Were there any application deployments around the time of the incident?
@@ -35,39 +43,31 @@ response time?
 
 - Another that will open a critical incident if the page load time for a browser application is greater than 2 seconds for at least 5 minutes. 
 
-## Step 1: Log into the training account
-
-In a private browser window, use the following credentials to log into New Relic: 
-
-- URL: [https://one.newrelic.com/](https://one.newrelic.com/)
-- Email: learn@newrelicuniversity.com
-- The instructor will provide the password
-
-## Step 2
+## Step 1
 Select the **NRU Training** account. From New Relic’s main menu, select _Alerts_ > _Alert Conditions_, then click _+ New alert condition_ in the upper-right.
 
-## Step 3
+## Step 2
 Select _Use guided mode_. Your first alert condition will monitor APM services, so select _Services - APM_ and click _Next_.
 
-## Step 4
+## Step 3
 On the next page, use _Filter by name or tags_ to filter the list of services to those containing a value of “Production” in the “Environment” tag. Select the matching services.
 
-## Step 5
+## Step 4
 Scroll down to **Select a metric to monitor**. From the list of golden metrics, select _Response time (ms)_. Note the automatically-generated NRQL query, then click _Next_.
 
-## Step 6
+## Step 5
 On the next page, under **Set condition thresholds**, configure a static threshold to open an incident of critical severity when a query returns a value above 500 (ms) for at least 5 minutes. Note that you may optionally add a second threshold to create an incident of warning severity. Click _Next_.
 
-## Step 7
+## Step 6
 On the final page, give your alert condition a descriptive name, such as “[Your initials] Production services response time > 500 ms”. 
 
-## Step 8
+## Step 7
 Under **Connect this condition to a policy**, select _New policy_ and create a new alert policy to contain your conditions. Give it a name you will recognize, such as “[Your initials] Alert policy”. Accept the defaults for all other options.
 
-## Step 9
+## Step 8
 Click _Save & set up notifications_. When prompted to create a workflow, select _Cancel_.
 
-## Step 10
+## Step 9
 Repeat the above steps to create a second alert condition: Open a critical incident if the _New Relic Pet Clinic_ browser application has a page load time greater than 2 seconds for at least 5 minutes. Add the condition to the policy you just created.
 
 ## Additional resources
